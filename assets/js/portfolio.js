@@ -1,40 +1,49 @@
 const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
-const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
+const arrowLeft  = document.querySelector('.portfolio-box .navigation .arrow-left');
 
 let index = 0;
 
-const acitvePortfolio = ()  => {
-    const imgSlide = document.querySelector('.portforile-carousel .img-slide');
-    const portfolioDetails = document.querySelectorAll('.portfolio-detail');
+const activePortfolio = () => {
+  const imgSlide = document.querySelector('.portforile-carousel .img-slide');
+  const portfolioDetails = document.querySelectorAll('.portfolio-detail');
+  const imgItems = document.querySelectorAll('.portforile-carousel .img-item');
 
-    imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
+  // 以“更小的那个数量”为准，避免图/文字数量不一致越界
+  const total = Math.min(imgItems.length, portfolioDetails.length);
 
-    portfolioDetails.forEach(detail => {
-        detail.classList.remove('active');
-    });
-    portfolioDetails[index].classList.add('active');
-}
+  // 防御：万一 index 越界，夹回合法范围
+  index = Math.max(0, Math.min(index, total - 1));
 
-arrowRight.addEventListener("click", () => {
-    if(index < 3) {
-        index++;
-        arrowLeft.classList.remove('disabled');
-    }
-    else {
-        index = 4;
-        arrowRight.classList.add('disabled');
-    }
-    acitvePortfolio();
+  // 移动图片
+  imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
+
+  // 切换文字卡片
+  portfolioDetails.forEach(d => d.classList.remove('active'));
+  if (portfolioDetails[index]) portfolioDetails[index].classList.add('active');
+
+  // 按钮禁用状态
+  if (index === 0) arrowLeft.classList.add('disabled');
+  else arrowLeft.classList.remove('disabled');
+
+  if (index === total - 1) arrowRight.classList.add('disabled');
+  else arrowRight.classList.remove('disabled');
+};
+
+// 右键
+arrowRight.addEventListener('click', () => {
+  const portfolioDetails = document.querySelectorAll('.portfolio-detail');
+  const imgItems = document.querySelectorAll('.portforile-carousel .img-item');
+  const total = Math.min(imgItems.length, portfolioDetails.length);
+
+  if (index < total - 1) index++;
+  activePortfolio();
 });
 
-arrowLeft.addEventListener("click", () => {
-    if(index > 1) {
-        index--;
-        arrowRight.classList.remove('disabled');
-    }
-    else {
-        index = 0;
-        arrowLeft.classList.add('disabled');
-    }
-    acitvePortfolio();
+// 左键
+arrowLeft.addEventListener('click', () => {
+  if (index > 0) index--;
+  activePortfolio();
 });
+
+// 页面加载时初始化一次（保证初始状态正确）
+activePortfolio();
