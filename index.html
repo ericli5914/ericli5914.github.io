@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gary's Personal Website</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+<main class="site-content">
+<!-- navigation menu -->
+<nav>
+  <div class="nav-container">
+    <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+      <span>Gary</span>
+    </div>
+    <div class="links">
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home" class="active">Home</a></div>
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#resume" >Resume</a></div>
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#portfolio">Portfolio</a></div>
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#contact">Contact</a></div>
+    </div>
+    <!-- <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i> -->
+    <i class="fa-solid fa-bars  hamburg"></i>
+  </div>
+  <div class="dropdown">
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#resume">Resume</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <!-- <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i> -->
+      <i class="fa-solid fa-xmark cancel"></i>
+    </div>
+  </div>
+</nav>
+
+<section class="home active" id="home">
+  <div class="main-container">
+    <div class="image">
+      <img src="assets/images/Me_1.jpg" alt="portrait">
+    </div>
+    <div class="content">
+      <h1>
+        Hey I'm
+        <span data-aos="fade-left" data-aos-duration="1500">Gary Wang</span>
+      </h1>
+      <div class="typewriter">
+       I'm 
+       <span class="typewriter-text" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="150"></span>
+       <label for="">|</label>
+      </div>
+      <p>Master's student at UC Berkeley specializing in Robotics and Autonomous Systems, I have developed a deep passion for the field through hands-on experience in autonomous UAV control, embedded systems, SLAM navigation, and robotic control & design.</p>
+      <p>My enthusiasm for robotics extends beyond technical achievements; I am driven by the vision of integrating intelligent systems seamlessly into daily life. I am eager to collaborate with like-minded professionals and contribute my insights to advance the field of robotics, continually pushing the boundaries of what is possible.</p>
+      <div class="social-part">
+
+      <div class="buttons">
+        <a href="assets/cv/Gary_Wang_CV.pdf" download="Gary_Wang_CV.pdf" class="button">
+          Download CV
+        </a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/Gary-W-211" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-github"></i><span>Github</span></a>
+        <a href="https://www.linkedin.com/in/gary-wang-659134322" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-linkedin"></i><span>linkedin</span></a>
+      </div>
+      <div class="social-links" >
+        
+      </div>
+      <!-- <div class="social-links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div> -->
+
+      </div>
+    </div>
+</section>
+
+<!-- Resume Section-->
+<section class="resume" id="resume">  
+  <div class="resume-container">
+    <div class="resume-box">
+      <h2>Bot or Not?</h2>
+      <p class="desc">Specializing in autonomous UAV control, embedded systems, SLAM navigation and robotics control & design, I have an unwavering passion for advancing the field of robotics through continuous innovation and exploration.
+      </p>
+      <div class="buttons">
+        <button class="resume-btn active">Experience</button>
+        <button class="resume-btn">Education</button>
+        <button class="resume-btn">Skills</button>
+      </div>
+    </div>
+
+    <div class="resume-box">
+
+      <div class="resume-detail experience active">
+        <h2 class="heading">My <span>Experience</span></h2>
+        <div class="resume-list">
+
+         <div class="resume-item">
+          <p class="year">Mar. 2025 - May 2025</p>
+          <h3>Computer Vision Engineer</h3>
+          <div class="company">
+            <p class="name">TRINEAR Inc.</p>
+            <p class="place">Tokyo, Japan</p>
+          </div>
+          <p class="resume-content">Developed real-time thermal tracking pipeline in OpenCV, deployed on a tri-modal (RGB–NIR–FIR) fused vision system.</p>
+         </div>
+
+         <div class="resume-item">
+          <p class="year">Feb. 2025 - May 2025</p>
+          <h3>Data Science Engineer</h3>
+          <div class="company">
+            <p class="name">Sharpen</p>
+            <p class="place">San Diego, CA, USA</p>
+          </div>
+          <p class="resume-content">Optimized pipeline, automating transcription and subtitles generation for 1,000+ videos using AWS Transcribe by Python.</p>
+          <p class="resume-content">Trained all-MiniLM-L6-v2 to generate transcript embeddings, enabling video recommendations via cosine similarity.</p>
+         </div>
+
+         <div class="resume-item">
+          <p class="year">May 2023 - Jun. 2023</p>
+          <h3>Robotics Engineer</h3>
+          <div class="company">
+            <p class="name">Xbort Park & Changguangxi Intelligent Manufacturing</p>
+            <p class="place">Changzhou, JiangSu, China</p>
+          </div>
+          <p class="resume-content">Programmed CGXi 6-axis industrial robotics for automated cargo transport, palletizing, and alignment operations.</p>
+          <p class="resume-content">Leveraged ROS with RealSense D435 for vehicle RGB-D mapping, integrated IMU, and implemented radar-based gmapping.</p>
+         </div>
+         
+         <div class="resume-item">
+          <p class="year">Aug. 2024 - May 2025</p>
+          <h3>UAV Research Engineer</h3>
+          <div class="company">
+            <p class="name">HiPeRLab</p>
+            <p class="place">University of California, Berkeley, CA, USA</p>
+          </div>
+          <p class="resume-content">Extracted and classified UAV telemetry from ROS bag files, ensuring high-quality datasets for downstream applications.</p>
+          <p class="resume-content">Trained multiple Neural Networks to identify the energy-optimal UAV trajectory, with the best achieving an MSE of 0.07.</p>
+          <p class="resume-content">Rebuilt GRU Neural Network in C++ and integrated with custom polynomial planner for real-time UAV path optimization.</p>
+          <p class="resume-content">Designed C++ embedded feedback controllers for autonomous UAV navigation, winning 1st place by algorithm optimization.</p>
+         </div>
+
+         <div class="resume-item">
+          <p class="year">Feb. 2025 - May 2025</p>
+          <h3>Lead Robotics Engineer</h3>
+          <div class="company">
+            <p class="name">Autonomous Sound-Tracking & Obstacle-Avoidance Robot</p>
+            <p class="place">University of California, Berkeley, CA, USA</p>
+          </div>
+          <p class="resume-content">Designed complete electrical wiring schematic and mechanical assembly for a custom-built robot entirely in SolidWorks.</p>
+          <p class="resume-content">Developed real-time control system on ESP32 using FreeRTOS in C for autonomous sound tracking and obstacle avoidance.</p>
+          <p class="resume-content">Integrated 1-D Kalman filter and ramped PWM control for stable, responsive motor behavior and noise minimization.</p>
+          <p class="resume-content">Built PyQt-based GUI for real-time telemetry visualization and serial device control.</p>
+         </div>
+
+         <div class="resume-item">
+          <p class="year">Aug. 2024 - Dec. 2024</p>
+          <h3>Researcher & Analyst</h3>
+          <div class="company">
+            <p class="name">Weighted Voronoi-Based Task Allocation</p>
+            <p class="place">University of California, Berkeley, CA, USA</p>
+          </div>
+          <p class="resume-content">Enhanced Voronoi-based algorithms by introducing real-time adaptive weights for dynamic task allocation optimization.</p>
+          <p class="resume-content">Built Python simulation scenarios to validate the enhanced Voronoi diagram algorithm under real-world constraints.</p>
+          <p class="resume-content">Achieved ~57% task allocation efficiency improvement over traditional Voronoi method through performance metrics.</p>
+         </div>
+
+         <div class="resume-item">
+          <p class="year">May 2023 - Aug. 2023</p>
+          <h3>Mechanical & Electrical Engineer</h3>
+          <div class="company">
+            <p class="name">Intelligent Rubik's Cube Solving Robot</p>
+            <p class="place">Xuzhou, Jiangsu, China</p>
+          </div>
+          <p class="resume-content">Implemented MCS-51 Assembly for precise stepper motor control, speed measurement, and visual feedback integration.</p>
+          <p class="resume-content">Applied OpenCV-based color clustering algorithms for accurate Rubik's Cube state recognition and manipulation.</p>
+          <p class="resume-content">Optimized image acquisition pipeline, eliminating color distortion and reducing capture time by ~1.5s.</p>
+          <p class="resume-content">Designed mechanical structures and optimized dual-arm gripper assemblies in SolidWorks for competition readiness.</p>
+         </div>
+
+         <div class="resume-item">
+          <p class="year">Dec. 2023 - May 2024</p>
+          <h3>Lead Designer & Analyst</h3>
+          <div class="company">
+            <p class="name">A versatile dual-rail work vehicle</p>
+            <p class="place">Hohai University, Changzhou, China</p>
+          </div>
+          <p class="resume-content">Designed complete vehicle structure with a focus on the robotic arm and assembly drawings in SolidWorks.</p>
+          <p class="resume-content">Conducted static finite element analysis in ANSYS to validate and optimize robotic arm structural performance.</p>
+          <p class="resume-content">Simulated the tracked chassis stability and maneuverability dynamically across diverse terrains via RecurDyn analysis.</p>
+          <p class="resume-content">Earned first prize at the Zhejiang University regional competition.</p>
+         </div>
+
+         <div class="resume-item">
+          <p class="year">May 2022 - Jun. 2024</p>
+          <h3>Robotics Engineer</h3>
+          <div class="company">
+            <p class="name">SLAM Robot and 3D Visualization Lab</p>
+            <p class="place">Hohai University, Changzhou, China</p>
+          </div>
+          <p class="resume-content">Designed and built a 1:1 Gazebo simulation environment, minimizing the simulation-to-reality gap.</p>
+          <p class="resume-content">Leveraged Cartographer SLAM for robust mapping in both simulated (Gazebo) and physical laboratory environments.</p>
+          <p class="resume-content">Tested and validated disinfection robot positioning accuracy against IMU-based error metrics in controlled environments.</p>
+         </div>
+
+        </div>
+      </div>
+
+      <div class="resume-detail education">
+        <h2 class="heading">My <span>Education</span></h2>
+        <div class="resume-list">
+          <div class="resume-item">
+            <p class="year">Aug. 2024 - May 2025</p>
+            <h3>University of California, Berkeley</h3>
+            <p class="name">Master of Engineering in Mechanical Engineering, Control of Robotic and Autonomous Systems</p>
+            <p class="resume-content">GPA: 3.73/4.0</p>
+          </div>
+
+          <div class="resume-item">
+            <p class="year">Sep. 2020 - Jun. 2024</p>
+            <h3>Hohai University</h3>
+            <p class="name">Bachelor of Engineering in Robotics Engineering</p>
+            <p class="resume-content">GPA: 3.6/4.0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-detail skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="resume-list">
+          <div class="resume-item">
+            <h3>Programming & Embedded</h3>
+            <p class="name">C, C++, Python, PLC, Assembly (MCS-51), LabVIEW, FreeRTOS, HTML, CSS, JavaScript.</p> 
+          </div>
+
+          <div class="resume-item">
+            <h3>Robotics & Simulation</h3>
+            <p class="name">ROS, Gazebo, SLAM, OpenCV, MATLAB, SolidWorks, ANSYS, RecurDyn</p> 
+          </div>
+
+          <div class="resume-item">
+            <h3>AI, Cloud & DevOps</h3>
+            <p class="name">PyTorch, AWS, Git</p> 
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="portfolio" id="portfolio">
+  <h2 class="heading"><span>Projects</span></h2>
+  <div class="portfolio-container">
+    <div class="portfolio-box">
+      <div class="portfolio-detail active">
+        <div class="project-head">
+          <p class="numb">01</p>
+          <h3>Real-Time Energy-Efficient UAV Path Planning</h3>
+        </div>
+        <p class="content">A ROS/C++ UAV trajectory planner, which leverages lightweight Neural Network(GRU/LSTM/TCN) models to accurately predict and minimize energy consumption in real time, achieving significant energy savings.</p>
+        <div class="tech">
+          <p>ROS, C++, Python, Data Processing</p>
+        </div>
+
+        <div class="github">
+          <a href="https://github.com/Gary-W-211/Neural-Network-for-energy-optimal-path-planning-of-UAV" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span>Github Repository</span></a>
+        </div>
+
+      </div>
+
+      <div class="portfolio-detail">
+        <div class="project-head">
+          <p class="numb">02</p>
+          <h3>Autonomous Sound-Tracking & Obstacle-Avoidance Robot</h3>
+        </div>
+        <p class="content">A FreeRTOS-powered ESP32 rover that simultaneously navigates, tracks sound sources, and dodges obstacles, using a 1-D Kalman filter and ramped-PWM motor control for smooth, responsive motion and low noise.</p>
+        <div class="tech">
+          <p>C, Python, LabVIEW, SolidWorks, Electrical wiring, ESP32 </p>
+        </div>
+        <div class="github">
+          <a href="https://github.com/Gary-W-211/Autonomous-Sound-Tracking-Obstacle-Avoidance-Robot"><i class="fa-brands fa-github"></i><span>Github Repository</span></a>
+        </div>
+      </div>
+
+      <div class="portfolio-detail">
+        <div class="project-head">
+          <p class="numb">03</p>
+          <h3>Weighted Voronoi-Based Task Allocation</h3>
+        </div>
+        <p class="content">A real-time task-allocation framework that augments traditional Voronoi diagrams with adaptive weights to optimize dynamic workload distribution. Validated in Python simulations under realistic conditions, it achieved a 57% efficiency gain over the classic Voronoi approach.</p>
+        <div class="tech">
+          <p class="numb3">Python, Task-allocation Algorithms</p>
+        </div>
+        <div class="github">
+          <a href="https://github.com/Gary-W-211/Weighted-Voronoi-Based-Task-Allocation"><i class="fa-brands fa-github"></i><span>Github Repository</span></a>
+        </div>
+      </div>
+
+      <div class="portfolio-detail">
+        <div class="project-head">
+          <p class="numb">04</p>
+          <h3>Intelligent Rubik's Cube Solving Robot</h3>
+        </div>  
+        <p class="content">An intelligent dual-arm robotic system designed to autonomously restore a Rubik’s Cube, integrating precise stepper motor control with advanced computer vision algorithms for accurate cube state detection and real-time manipulation planning.</p>
+        <div class="tech">
+          <p>C++, OpenCV, Assembly Language, SolidWorks, STM32</p>
+        </div>
+      </div>
+
+      <div class="portfolio-detail">
+        <div class="project-head">
+          <p class="numb">05</p>
+          <h3>A versatile dual-rail work vehicle</h3>
+        </div>
+        <p class="content">A versatile work vehicle equipped with dual rails for flexible tool switching, capable of simultaneously mounting a laser-assisted device and a hydraulic impact hammer for efficient rock-breaking, delivering high performance and operational versatility.</p>
+        <div class="tech">
+          <p>SolidWorks, CAD, ANSYS Workbench, RecurDyn</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="portfolio-box">
+      <div class="portforile-carousel">
+        <div class="img-slide">
+          <div class="img-item">
+            <img src="assets/images/project1.jpg" alt="project">
+          </div>
+          <div class="img-item">
+            <img src="assets/images/project2.jpg" alt="project">
+          </div>
+          <div class="img-item">
+            <img src="assets/images/project3.jpg" alt="project">
+          </div>
+          <div class="img-item">
+            <img src="assets/images/project4.jpg" alt="project">
+          </div>
+          <div class="img-item">
+            <img src="assets/images/project5.jpg" alt="project">
+          </div>
+          <div class="img-item">
+            <img src="assets/images/project6.jpg" alt="project">
+          </div>
+          <div class="img-item">
+            <img src="assets/images/project7.jpg" alt="project">
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="buttons">
+          <button class="arrow-left disabled"><i class="fas fa-chevron-left"></i></button>
+          <button class="arrow-right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- Projects Section -->
+<!-- <section class="projects" id="projects">
+  <div class="content">
+    <div class="title"><span>Projects</span></div>
+    <div class="project-list">
+      <div class="project-item">
+        <div class="icon">
+          <i class="fas fa-desktop"></i>
+        </div>
+        <div class="topic">Project1</div>
+        <p>proj 1 discribe</p>
+      </div>
+
+      <div class="project-item">
+        <div class="icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <div class="topic">Project2</div>
+        <p>proj 2 discribe</p>
+      </div>
+
+      <div class="project-item">
+        <div class="icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="topic">Project3</div>
+        <p>proj 3 discribe</p>
+      </div>
+      
+      <div class="project-item">
+        <div class="icon">
+          <i class="fas fa-desktop"></i>
+        </div>
+        <div class="topic">Project4</div>
+        <p>proj 4 discribe</p>
+      </div>
+
+      <div class="project-item">
+        <div class="icon">
+          <i class="fas fa-desktop"></i>
+        </div>
+        <div class="topic">Project5</div>
+        <p>proj 5 discribe</p>
+      </div>
+
+      <div class="project-item">
+        <div class="icon">
+          <i class="fas fa-desktop"></i>
+        </div>
+        <div class="topic">Project6</div>
+        <p>proj 6 discribe</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Contact Me-->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <div class="contact-box">
+      <h2>Let's Work Together</h2>
+      <div class="contact-detail">
+        <i class="fas fa-phone"></i>
+        <div class="detail">
+          <p>Phone</p>
+          <p>+1 (510) 684-6080</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <i class="fas fa-envelope"></i>
+        <div class="detail">
+          <p>Email</p>
+          <p>gailywvls@berkeley.edu</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <i class="fas fa-map-marked-alt"></i>
+        <div class="detail">
+          <p>Address</p>
+          <p>2116 Allston Way, Berkeley, CA, 94704</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <form id="contactForm" action="#" autocomplete="off">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <div class="field-box">
+          <input type="text"  name="fullname" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel"   name="phone" placeholder="Phone Number" required>
+          <input type="text"  name="subject" placeholder="Email Subject" required>
+          <textarea           name="message" id="" placeholder="Your Message" required></textarea>
+    
+        </div>
+        <div class="buttons">
+        <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+</section>
+
+</main>
+
+<!-- Footer Section-->
+<footer class="site-footer">
+  <div class="text">
+    <span>Personal Website | &#169; 2025 Mingxuan(Gary) Wang. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="assets/js/typewriter.js"></script>
+
+<script type="module">
+  import { openMenu, closeMenu } from "./assets/js/menu.js";
+
+  document.querySelector(".hamburg").addEventListener("click", openMenu);
+  document.querySelector(".cancel" ).addEventListener("click", closeMenu);
+</script>
+<script src="assets/js/resume.js"></script>
+<script src="assets/js/portfolio.js"></script>
+<script src="assets/js/email.js"></script>
+<script src="assets/js/nav.js"></script>
+</body>
+</html>
